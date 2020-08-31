@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to left, #204969, #153650);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.container {
+  width: 50%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+  grid-template-areas: "ex1 ex2" "ex2 ex3"; }
+
+.ex {
+  background-color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .ex:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    transform: translateY(-10px);
+    cursor: pointer; }
+
+#ex3 .inner-top {
+  background: url("../img/tbas.jpg") center center/cover; }
+
+.inner {
+  width: 100%; }
+
+.inner-top {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c1924;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
+
+#inner1 {
+  background: url("../img/Tasukete.jpg") center center/cover; }
+
+.inner-bottom {
+  height: 40%;
+  padding: 1.2rem 1rem;
+  color: #0c1924;
+  position: relative;
+  overflow: hidden; }
+  .inner-bottom .btn {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem 2.5rem;
+    background: linear-gradient(to bottom left, #1c9e7b, #107459);
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    border-radius: 3px; }
+    .inner-bottom .btn:hover {
+      transition: all 1s;
+      background: linear-gradient(to bottom left, #841c9e, #741042); }
+
+#ex1 {
+  grid-area: "ex1"; }
+
+#ex2 {
+  grid-area: "ex2"; }
+
+#ex3 {
+  grid-area: "ex3"; }

@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+:root {
+  font-size: 1vw; }
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to left, #204969, #153650);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#balloon {
+  font-size: 1rem; }
